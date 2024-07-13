@@ -29,6 +29,9 @@ fs.cpSync("./text.txt","./copy.txt"); //for copy the file
  
 fs.unlinkSync("./copy.txt"); // for delete the file
 
-console.log(fs.statSync('./text.txt')); // for check the file details
+//console.log(fs.statSync('./text.txt')); // for check the file details
 
 fs.mkdirSync("my-docs"); //for create the folder
+
+const os = require("os");
+console.log(os.cpus().length);
